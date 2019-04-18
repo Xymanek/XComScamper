@@ -1,0 +1,1 @@
+﻿Gives XCom soldiers that ended their turn actions when revealing a group of enemies

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>fd42c631-1813-4ff6-bf60-99443c5bf591</Guid>
+    <Name>XComScamper</Name>
+    <Description>Gives XCom soldiers that ended their turn actions when revealing a group of enemies</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>XComScamper</AssemblyName>
+    <RootNamespace>XComScamper</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\XComScamper\" />
+    <Folder Include="Src\XComScamper\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComScamper.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\XComScamper.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\XComScamper\Classes\X2EventListener_XComScamper.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\XComScamper\Classes\XComGameStateContext_XComScamper.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
