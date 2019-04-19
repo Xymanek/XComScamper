@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # XCOM ModBuddy Solution File, Format Version 11.00
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "XComScamper", "XComScamper\XComScamper.x2proj", "{B3B9A2F4-4A43-4677-9635-62F4D20B90C0}"
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "XComScamper", "XComScamper\XComScamper.x2proj", "{1F1857FB-AD51-43C7-9FB4-92C5680C1A3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Default|XCOM 2 = Default|XCOM 2
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B3B9A2F4-4A43-4677-9635-62F4D20B90C0}.Debug|XCOM 2.ActiveCfg = Debug|XCOM 2
-		{B3B9A2F4-4A43-4677-9635-62F4D20B90C0}.Debug|XCOM 2.Build.0 = Debug|XCOM 2
-		{B3B9A2F4-4A43-4677-9635-62F4D20B90C0}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
-		{B3B9A2F4-4A43-4677-9635-62F4D20B90C0}.Default|XCOM 2.Build.0 = Default|XCOM 2
+		{1F1857FB-AD51-43C7-9FB4-92C5680C1A3E}.Debug|XCOM 2.ActiveCfg = Debug|XCOM 2
+		{1F1857FB-AD51-43C7-9FB4-92C5680C1A3E}.Debug|XCOM 2.Build.0 = Debug|XCOM 2
+		{1F1857FB-AD51-43C7-9FB4-92C5680C1A3E}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
+		{1F1857FB-AD51-43C7-9FB4-92C5680C1A3E}.Default|XCOM 2.Build.0 = Default|XCOM 2
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
