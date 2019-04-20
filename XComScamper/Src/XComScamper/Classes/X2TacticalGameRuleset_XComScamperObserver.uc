@@ -64,11 +64,14 @@ protected function ProcessGameState(XComGameState SubmittedGameState)
 		// We are only interested in cases where there was a change in action points
 		if (AreArraysSame(OldUnitState.ActionPoints, SubmittedUnitState.ActionPoints)) continue;
 
-		/////////////////////////
-		/// All checks passed ///
-		/////////////////////////
-
-		EffectsToRemove.AddItem(SubmittedUnitState.GetUnitAffectedByEffectState(EffectName).GetReference());
+		// The penalty is removed in 2 cases:
+		if (
+			!AreArraysSame(OldUnitState.ActionPoints, SubmittedUnitState.ActionPoints) || // Unit's APs have changed
+			!SubmittedUnitState.IsAbleToAct() // Or unit lost the ability to act (e.g. killed by ruler's reaction)
+		)
+		{
+			EffectsToRemove.AddItem(SubmittedUnitState.GetUnitAffectedByEffectState(EffectName).GetReference());
+		}
 	}
 
 	if (EffectsToRemove.Length == 0)
@@ -100,7 +103,7 @@ simulated function bool AreArraysSame(array<name> Array1, array<name> Array2)
 
 	for (i = 0; i < Array1.Length; i++)
 	{
-		if (Array1[1] != Array2[i])
+		if (Array1[i] != Array2[i])
 		{
 			return false;
 		}

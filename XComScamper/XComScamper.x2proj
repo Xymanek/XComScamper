@@ -31,7 +31,6 @@
     <Content Include="Config\XComEditor.ini" />
     <Content Include="Config\XComEngine.ini" />
     <Content Include="Config\XComGame.ini" />
-    <Content Include="Localization\XComGame.int" />
     <Content Include="Src\XComScamper\Classes\X2DownloadableContentInfo_XComScamper.uc">
       <SubType>Content</SubType>
     </Content>
