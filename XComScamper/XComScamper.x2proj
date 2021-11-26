@@ -26,6 +26,9 @@
     <Content Include="Localization\XComScamper.int">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Localization\XComScamper.RUS">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ReadMe.txt" />
     <Content Include="ModPreview.jpg" />
     <Content Include="Config\XComEditor.ini" />
